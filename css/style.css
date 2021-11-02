@@ -1,3 +1,5 @@
+/* Global */
+
 :root {
   --color-primary: #bc6c25;
   --color-primary-lighter: #fef9f4;
@@ -24,6 +26,7 @@ h2 {
   row-gap: 3rem;
 }
 
+/* Revealing images effect */
 .blur {
   filter: blur(10px);
 }
@@ -33,13 +36,82 @@ h2 {
   box-shadow: 0 0 5px 0.4rem rgb(230, 126, 34, 0.4) !important;
 }
 
+/* Revealing sections effect */
 .section-hidden {
   opacity: 0;
   transform: translateY(8rem);
 }
 
-.header {
+.btn {
+  transition: 0.3s;
+}
+
+.btn:not(.header .btn):not(.reservations .btn):hover {
+  background-color: #4d562d !important;
+}
+
+/* Common properties */
+
+.header,
+.btn:not(.hero .btn):not(.reservations .btn):not(.reserve-btn),
+.testimonial {
   background-color: var(--tertiary-color);
+}
+
+.header::before,
+.header::after,
+.header .nav-item.reserve-btn,
+.chef-menu,
+.testimonials,
+footer {
+  background-color: var(--color-primary);
+}
+
+.primary-color,
+.header .navbar-brand:before,
+.today li::marker {
+  color: var(--color-primary);
+}
+
+.section-features .container,
+.offer,
+.reservations {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section-features,
+.offer,
+.today {
+  background-color: var(--color-primary-lighter);
+}
+
+.tertiary-color,
+.reservations input::placeholder,
+option {
+  color: var(--tertiary-color);
+}
+
+.header .navbar-light .navbar-nav .nav-link,
+.hero .sub-heading,
+option {
+  font-weight: 500;
+}
+
+.section-features p,
+.offer p,
+.today p,
+.today li {
+  color: var(--accent);
+}
+
+.secondary-color,
+footer .social a {
+  color: var(--secondary-color);
+}
+
+/* HEADER */
+.header {
   z-index: 0;
   height: 100vh;
 }
@@ -55,7 +127,6 @@ h2 {
   width: 60vw;
   height: 60vw;
   border-radius: 50%;
-  background-color: var(--color-primary);
   right: -15%;
 }
 
@@ -78,44 +149,26 @@ h2 {
   content: '\f805';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  color: var(--color-primary);
   display: inline-block;
   margin-right: 5px;
 }
 
 .header .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255, 0.7);
-  font-weight: 500;
 }
 
 .header .navbar-light .navbar-nav .nav-link:hover {
   color: #fff;
 }
 
-.header .nav-item.btn {
-  background-color: var(--tertiary-color);
-}
-
-.header .nav-item.reserve-btn {
-  background-color: var(--color-primary);
-}
-
+/* HERO */
 .hero {
   padding-top: 6rem;
   padding-bottom: 8rem;
 }
 
-.hero p {
-  font-style: italic;
-}
-
 .heading-primary {
   font-size: 4rem;
-}
-
-.hero .sub-heading {
-  color: var(--color-primary);
-  font-weight: 500;
 }
 
 .hero-img {
@@ -126,47 +179,14 @@ h2 {
   transform: rotate(360deg);
 }
 
-.section-features {
-  background-color: var(--color-primary-lighter);
-  color: var(--tertiary-color);
-}
-
-.section-features .container {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  overflow: hidden;
-}
-
+/* FEATURES SECTION */
 .feature {
   transition: 1.5s;
 }
 
-.section-features i {
-  color: var(--color-primary);
-}
-
-.section-features p {
-  color: var(--accent);
-}
-
-.section-features a {
-  color: var(--tertiary-color);
-  font-weight: bold;
-}
-
-.main-course,
-.chef-menu,
-.testimonials {
-  background-color: var(--color-primary);
-  color: var(--secondary-color);
-}
-
+/* MAIN COURSE SECTION */
 .main-course {
   background-color: #f56f14;
-}
-
-.img-box {
-  overflow: hidden;
 }
 
 .price {
@@ -176,69 +196,20 @@ h2 {
 .price::before {
   content: '';
   width: 75%;
-  height: 1px;
+  height: 2px;
   background-color: var(--secondary-color);
 }
 
-.main-course .btn,
-.chef-menu .btn {
-  background-color: var(--tertiary-color);
-}
-
-.offer {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background-color: var(--color-primary-lighter);
-}
-
-.offer h2 {
-  color: var(--tertiary-color);
-}
-
-.offer p {
-  color: var(--accent);
-}
-
-.offer .btn {
-  background-color: var(--tertiary-color);
-}
-
+/* TODAY'S MEAL SECTION */
 .today {
   padding-top: 8rem;
-  background-color: var(--color-primary-lighter);
-}
-
-.today h2 {
-  color: var(--tertiary-color);
-}
-
-.today h3,
-.today h4 {
-  color: var(--secondary-color);
-}
-
-.today h4 span,
-.today h4 i {
-  color: var(--color-primary);
 }
 
 .today h4 span {
   font-size: 2rem;
 }
 
-.today p,
-.today li {
-  color: var(--accent);
-}
-
-.today li::marker {
-  color: var(--color-primary);
-}
-
-.today .btn {
-  background-color: var(--tertiary-color);
-}
-
+/* TESTIMONIALS SECTION */
 .testimonials {
   padding-top: 5rem;
   padding-bottom: 8rem;
@@ -253,13 +224,11 @@ h2 {
 }
 
 .testimonial {
-  background-color: var(--tertiary-color);
   box-shadow: 0px 5px 10px 10px rgb(96, 108, 56, 0.2);
 }
 
+/* RESERVATIONS SECTION */
 .reservations {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   background: linear-gradient(
       to right bottom,
       rgb(98, 123, 56, 0.65),
@@ -269,37 +238,24 @@ h2 {
   background-size: cover;
 }
 
-.reservations input::placeholder {
-  color: var(--tertiary-color);
-}
-
 .reservations select {
-  color: var(--tertiary-color);
   height: 50px;
-}
-
-option {
-  color: var(--tertiary-color);
-  font-weight: 500;
 }
 
 .reservations .btn {
   background-color: #1e2d03;
 }
 
+/* FOOTER */
 footer {
-  background-color: var(--color-primary);
   border-top: 2px solid var(--secondary-color);
-  color: var(--secondary-color);
 }
 
 footer .heart {
-  color: var(--tertiary-color);
   font-size: 1.2rem;
 }
 
 footer .social a {
-  color: var(--secondary-color);
   font-size: 1.8rem;
 }
 
@@ -325,4 +281,117 @@ footer .social i:hover {
 
 .linkedin:hover {
   color: #0a66c2;
+}
+
+/*
+    CAROUSEL CODE
+    code by Iatek LLC 2018 - CC 2.0 License
+    code customized by Azmind.com
+*/
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* my carousel code */
+.today .carousel-inner {
+  padding: 8rem;
+}
+
+.today .carousel-control-next,
+.carousel-control-prev {
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+  border: none;
+  background-color: unset;
+}
+
+.today .carousel-control-next,
+.today .carousel-control-next:hover,
+.today .carousel-control-next:focus,
+.today .carousel-control-prev,
+.today .carousel-control-prev:hover,
+.today .carousel-control-prev:focus {
+  color: var(--tertiary-color);
 }

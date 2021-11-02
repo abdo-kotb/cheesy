@@ -1,5 +1,7 @@
 'use strict';
 
+const year = document.getElementById('year');
+
 const navLinks = document.querySelector('.navbar-nav');
 
 const header = document.querySelector('.header');
@@ -16,15 +18,20 @@ const reservSec = document.querySelector('.reservations');
 const reservebtn = reservSec.querySelector('.btn');
 
 /////////////////////////////////////
+// Setting the date year
+year.textContent = new Date().getFullYear();
+
+/////////////////////////////////////
 // page navigation
 
 navLinks.addEventListener('click', function (e) {
   e.preventDefault();
 
   if (!e.target.classList.contains('nav-link')) return;
+
   const id = e.target.getAttribute('href');
-  id.length > 1 &&
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+
+  document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
 });
 
 /////////////////////////////////////
@@ -141,16 +148,11 @@ lazyImgs.forEach(img => imgsObserver.observe(img));
 //////////////////////////////////////
 // effect on reservation section
 
-const reservationObserver = new IntersectionObserver(function (
-  entries,
-  observer
-) {
+const reservationObserver = new IntersectionObserver(function (entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) return;
-
-  reservebtn.classList.add('pulse');
-  observer.unobserve(entry.target);
+  if (entry.isIntersecting) reservebtn.classList.add('pulse');
+  else reservebtn.classList.remove('pulse');
 });
 
 reservationObserver.observe(reservSec);

@@ -17,8 +17,12 @@
     <title>Cheezy | Don't Wait For Food</title>
   </head>
   <body>
-    <header class="header text-white position-relative overflow-hidden">
+    <header
+      id="header"
+      class="header text-white position-relative overflow-hidden"
+    >
       <div class="container">
+        <!-- -------------------------NAVBAR------------------------- -->
         <nav class="navbar navbar-expand-md navbar-light">
           <a class="navbar-brand text-white" href="#">Cheezy</a>
           <button
@@ -36,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto align-items-center">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="#header"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -58,11 +62,14 @@
             </ul>
           </div>
         </nav>
+        <!-- -------------------------HERO SECTION------------------------- -->
         <div class="hero row align-items-center text-center text-md-left">
           <div class="col-md-5">
-            <p class="mb-0">Are you hungry?</p>
+            <p class="mb-0 font-italic">Are you hungry?</p>
             <h1 class="heading-primary mb-0 pulse">Don't Wait!</h1>
-            <p class="sub-heading mb-4">Let's start to order food right now</p>
+            <p class="sub-heading mb-4 font-italic primary-color">
+              Let's start to order food right now
+            </p>
             <button class="btn border-white text-white px-4 py-2">
               CHECK MENU
             </button>
@@ -83,41 +90,69 @@
         </div>
       </div>
     </header>
-    <section class="section-features text-center">
-      <div class="container">
+    <!-- -------------------------FEATURES SECTION------------------------- -->
+    <section class="section-features text-center tertiary-color">
+      <div class="container overflow-hidden">
         <div class="row">
           <div class="col-md feature bounce bounce-left">
-            <i class="fas fa-cloud-meatball fa-3x" aria-hidden="true"></i>
+            <i
+              class="fas fa-cloud-meatball fa-3x primary-color"
+              aria-hidden="true"
+            ></i>
             <h2 class="h4 mt-2 mb-3">CORNISH COD FILET</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
               ipsum dolor
             </p>
-            <a href="#" class="text-decoration-none wobble-link"
+            <a
+              href="#"
+              class="
+                text-decoration-none
+                wobble-link
+                font-weight-bold
+                tertiary-color
+              "
               >ORDER NOW
               <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
             ></a>
           </div>
           <div class="col-md feature bounce bounce-down">
-            <i class="fas fa-utensils fa-3x" aria-hidden="true"></i>
+            <i
+              class="fas fa-utensils fa-3x primary-color"
+              aria-hidden="true"
+            ></i>
             <h2 class="h4 mt-2 mb-3">RUBY SALAD</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
               ipsum dolor
             </p>
-            <a href="#" class="text-decoration-none wobble-link"
+            <a
+              href="#"
+              class="
+                text-decoration-none
+                wobble-link
+                font-weight-bold
+                tertiary-color
+              "
               >ORDER NOW
               <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
             ></a>
           </div>
           <div class="col-md feature bounce bounce-right">
-            <i class="fas fa-hotdog fa-3x" aria-hidden="true"></i>
+            <i class="fas fa-hotdog fa-3x primary-color" aria-hidden="true"></i>
             <h2 class="h4 mt-2 mb-3">SEAFOOD SPAGHETTI</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
               ipsum dolor
             </p>
-            <a href="#" class="text-decoration-none wobble-link"
+            <a
+              href="#"
+              class="
+                text-decoration-none
+                wobble-link
+                font-weight-bold
+                tertiary-color
+              "
               >ORDER NOW
               <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
             ></a>
@@ -125,10 +160,11 @@
         </div>
       </div>
     </section>
-    <section id="main-course" class="main-course">
+    <!-- -------------------------MAIN MEAL SECTION------------------------- -->
+    <section id="main-course" class="main-course secondary-color">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-5 p-0 d-flex img-box">
+          <div class="col-md-5 p-0 d-flex img-box overflow-hidden">
             <img
               class="img-fluid blur"
               src="imgs/main-course.jpg"
@@ -166,9 +202,10 @@
         </div>
       </div>
     </section>
+    <!-- -------------------------OFFER SECTION------------------------- -->
     <section class="offer text-center">
       <div class="container section-hidden">
-        <h2 class="h1 mb-3">Sunday Offer</h2>
+        <h2 class="h1 mb-3 tertiary-color">Sunday Offer</h2>
         <p class="lead">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,
           cupiditate eius. Sed consequuntur neque soluta delectus, quam rerum
@@ -182,7 +219,7 @@
         <button class="btn text-white px-5 py-2">DISCOVER</button>
       </div>
     </section>
-    <section class="chef-menu">
+    <section class="chef-menu secondary-color">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-7 py-4">
@@ -210,7 +247,7 @@
             </div>
             <button class="btn text-white px-5 py-2">MAIN DISH</button>
           </div>
-          <div class="col-md-5 p-0 d-flex img-box">
+          <div class="col-md-5 p-0 d-flex img-box overflow-hidden">
             <img
               class="img-fluid blur"
               src="imgs/chef-menu.jpg"
@@ -223,9 +260,10 @@
         </div>
       </div>
     </section>
+    <!-- -------------------------TODAY'S MEAL SECTION------------------------- -->
     <section id="today" class="today pb-5 pb-md-0">
       <div class="container overflow-hidden">
-        <h2 class="h1 text-center mb-5">Today's Best</h2>
+        <h2 class="h1 text-center mb-5 tertiary-color">Today's Best</h2>
         <div class="row today-meal align-items-center">
           <div
             class="
@@ -246,15 +284,15 @@
             />
           </div>
           <div class="col-lg meals bounce bounce-left">
-            <h3 class="h4">Cuisine Name</h3>
+            <h3 class="h4 secondary-color">Cuisine Name</h3>
             <p>Lorem ipsum dolor sit, amet.</p>
-            <h4 class="h6">
-              PRICE <span>&dollar;29.59</span>
-              <i class="fas fa-star" aria-hidden="true"></i
-              ><i class="fas fa-star" aria-hidden="true"></i
-              ><i class="fas fa-star" aria-hidden="true"></i
-              ><i class="fas fa-star" aria-hidden="true"></i
-              ><i class="fas fa-star" aria-hidden="true"></i>
+            <h4 class="h6 secondary-color">
+              PRICE <span class="primary-color">&dollar;29.59</span>
+              <i class="fas fa-star primary-color" aria-hidden="true"></i
+              ><i class="fas fa-star primary-color" aria-hidden="true"></i
+              ><i class="fas fa-star primary-color" aria-hidden="true"></i
+              ><i class="fas fa-star primary-color" aria-hidden="true"></i
+              ><i class="fas fa-star primary-color" aria-hidden="true"></i>
             </h4>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -268,6 +306,7 @@
             <button class="btn text-white px-5 py-2">BOOK A TABLE</button>
           </div>
         </div>
+        <!-- -------------------------CAROUSEL------------------------- -->
         <div
           id="carousel-example"
           class="carousel slide d-none d-md-block"
@@ -353,7 +392,8 @@
         </div>
       </div>
     </section>
-    <section id="testimonials" class="testimonials">
+    <!-- -------------------------TESTIMONIALS SECTION------------------------- -->
+    <section id="testimonials" class="testimonials secondary-color">
       <div class="container section-hidden">
         <h2 class="mb-4 h1 text-center">What customers say</h2>
         <h3 class="h4 text-white mb-5">Once you try it, you can't go back</h3>
@@ -440,6 +480,7 @@
         </div>
       </div>
     </section>
+    <!-- -------------------------RESERVATION SECTION------------------------- -->
     <section id="reservation" class="reservations font-weight-bold text-white">
       <div class="container">
         <h2 class="text-center text-white mb-5">RESERVATIONS</h2>
@@ -468,7 +509,7 @@
           </div>
           <div class="col-md-6 form-group">
             <label for="table">How many people?</label>
-            <select class="form-control" name="table" id="table">
+            <select class="form-control tertiary-color" name="table" id="table">
               <option disabled selected value>Please choose one option</option>
               <option value="1">1 Person</option>
               <option value="2">2 People</option>
@@ -485,12 +526,16 @@
         </form>
       </div>
     </section>
-    <footer class="py-4 text-center">
+    <footer class="py-4 text-center secondary-color">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md text-center text-md-left">
-            &copy; <span>2021</span> Abdulrhman Kotb | Made With
-            <i class="fas fa-heart heart" aria-hidden="true" title="love"></i>
+            &copy; <span id="year">2021</span> Abdulrhman Kotb | Made With
+            <i
+              class="fas fa-heart heart tertiary-color"
+              aria-hidden="true"
+              title="love"
+            ></i>
             <span class="sr-only">love</span>
           </div>
           <div class="col-md text-center text-md-right social">
