@@ -184,6 +184,10 @@ footer .social a {
   transition: 1.5s;
 }
 
+.feature a:hover {
+  color: var(--tertiary-color);
+}
+
 /* MAIN COURSE SECTION */
 .main-course {
   background-color: #f56f14;
