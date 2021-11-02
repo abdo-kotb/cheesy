@@ -1,0 +1,328 @@
+:root {
+  --color-primary: #bc6c25;
+  --color-primary-lighter: #fef9f4;
+  --secondary-color: #45260a;
+  --tertiary-color: #606c38;
+  --accent: #666;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.container,
+.bounce {
+  transition: 1s;
+}
+
+.row {
+  row-gap: 3rem;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+*:focus {
+  outline: unset;
+  box-shadow: 0 0 5px 0.4rem rgb(230, 126, 34, 0.4) !important;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.header {
+  background-color: var(--tertiary-color);
+  z-index: 0;
+  height: 100vh;
+}
+
+.header .container {
+  z-index: 2;
+}
+
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  right: -15%;
+}
+
+.header::before {
+  top: -65%;
+}
+
+.header::after {
+  bottom: -65%;
+  z-index: -1;
+}
+
+.header .navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  letter-spacing: -2px;
+}
+
+.header .navbar-brand:before {
+  content: '\f805';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: var(--color-primary);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.header .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.header .nav-item.btn {
+  background-color: var(--tertiary-color);
+}
+
+.header .nav-item.reserve-btn {
+  background-color: var(--color-primary);
+}
+
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.hero p {
+  font-style: italic;
+}
+
+.heading-primary {
+  font-size: 4rem;
+}
+
+.hero .sub-heading {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.hero-img {
+  transition: 1s;
+}
+
+.hero-img:hover {
+  transform: rotate(360deg);
+}
+
+.section-features {
+  background-color: var(--color-primary-lighter);
+  color: var(--tertiary-color);
+}
+
+.section-features .container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+
+.feature {
+  transition: 1.5s;
+}
+
+.section-features i {
+  color: var(--color-primary);
+}
+
+.section-features p {
+  color: var(--accent);
+}
+
+.section-features a {
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+.main-course,
+.chef-menu,
+.testimonials {
+  background-color: var(--color-primary);
+  color: var(--secondary-color);
+}
+
+.main-course {
+  background-color: #f56f14;
+}
+
+.img-box {
+  overflow: hidden;
+}
+
+.price {
+  gap: 1rem;
+}
+
+.price::before {
+  content: '';
+  width: 75%;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+.main-course .btn,
+.chef-menu .btn {
+  background-color: var(--tertiary-color);
+}
+
+.offer {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: var(--color-primary-lighter);
+}
+
+.offer h2 {
+  color: var(--tertiary-color);
+}
+
+.offer p {
+  color: var(--accent);
+}
+
+.offer .btn {
+  background-color: var(--tertiary-color);
+}
+
+.today {
+  padding-top: 8rem;
+  background-color: var(--color-primary-lighter);
+}
+
+.today h2 {
+  color: var(--tertiary-color);
+}
+
+.today h3,
+.today h4 {
+  color: var(--secondary-color);
+}
+
+.today h4 span,
+.today h4 i {
+  color: var(--color-primary);
+}
+
+.today h4 span {
+  font-size: 2rem;
+}
+
+.today p,
+.today li {
+  color: var(--accent);
+}
+
+.today li::marker {
+  color: var(--color-primary);
+}
+
+.today .btn {
+  background-color: var(--tertiary-color);
+}
+
+.testimonials {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(
+      to right bottom,
+      rgb(188, 108, 37, 0.85),
+      rgb(188, 108, 37, 0.85)
+    ),
+    url(../imgs/testimonial-table.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonial {
+  background-color: var(--tertiary-color);
+  box-shadow: 0px 5px 10px 10px rgb(96, 108, 56, 0.2);
+}
+
+.reservations {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(
+      to right bottom,
+      rgb(98, 123, 56, 0.65),
+      rgb(118, 140, 81, 0.65)
+    ),
+    url(../imgs/reservation.jpg) no-repeat;
+  background-size: cover;
+}
+
+.reservations input::placeholder {
+  color: var(--tertiary-color);
+}
+
+.reservations select {
+  color: var(--tertiary-color);
+  height: 50px;
+}
+
+option {
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+
+.reservations .btn {
+  background-color: #1e2d03;
+}
+
+footer {
+  background-color: var(--color-primary);
+  border-top: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+footer .heart {
+  color: var(--tertiary-color);
+  font-size: 1.2rem;
+}
+
+footer .social a {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+footer .social i {
+  transition: 0.5s;
+}
+
+footer .social i:hover {
+  transform: rotate(360deg);
+}
+
+.github:hover {
+  color: #fff;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.twitter:hover {
+  color: #33ccff;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries&animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cheezy | Don't Wait For Food</title>
+  </head>
+  <body>
+    <header class="header text-white position-relative overflow-hidden">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand text-white" href="#">Cheezy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#main-course">Meals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#today">Check Today!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item btn ml-md-3 py-0 px-2">
+                <a class="nav-link text-white" href="#reservation"
+                  >Try Now!
+                  <i class="ml-2 fas fa-level-down-alt" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero row align-items-center text-center text-md-left">
+          <div class="col-md-5">
+            <p class="mb-0">Are you hungry?</p>
+            <h1 class="heading-primary mb-0 pulse">Don't Wait!</h1>
+            <p class="sub-heading mb-4">Let's start to order food right now</p>
+            <button class="btn border-white text-white px-4 py-2">
+              CHECK MENU
+            </button>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <picture>
+              <source srcset="imgs/hero-img.webp" type="image/webp" />
+              <source srcset="imgs/hero-img.png" type="image/png" />
+              <img
+                class="img-fluid rounded-circle p-2 border hero-img"
+                src="imgs/hero-img.png"
+                alt="A dish of food"
+                width="300px"
+                height="300px"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-features text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md feature bounce bounce-left">
+            <i class="fas fa-cloud-meatball fa-3x" aria-hidden="true"></i>
+            <h2 class="h4 mt-2 mb-3">CORNISH COD FILET</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+              ipsum dolor
+            </p>
+            <a href="#" class="text-decoration-none wobble-link"
+              >ORDER NOW
+              <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="col-md feature bounce bounce-down">
+            <i class="fas fa-utensils fa-3x" aria-hidden="true"></i>
+            <h2 class="h4 mt-2 mb-3">RUBY SALAD</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+              ipsum dolor
+            </p>
+            <a href="#" class="text-decoration-none wobble-link"
+              >ORDER NOW
+              <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="col-md feature bounce bounce-right">
+            <i class="fas fa-hotdog fa-3x" aria-hidden="true"></i>
+            <h2 class="h4 mt-2 mb-3">SEAFOOD SPAGHETTI</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+              ipsum dolor
+            </p>
+            <a href="#" class="text-decoration-none wobble-link"
+              >ORDER NOW
+              <i class="ml-2 fas fa-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main-course" class="main-course">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 p-0 d-flex img-box">
+            <img
+              class="img-fluid blur"
+              src="imgs/main-course.jpg"
+              data-src="imgs/main-course-full.jpg"
+              alt="broccoli with meat on plate"
+              width="1248px"
+              height="832px"
+            />
+          </div>
+          <div class="col-md-7 py-4">
+            <h2 class="mb-4 h1">Main Course</h2>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="18"> &dollar;18 </span>
+              </h4>
+            </div>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="20"> &dollar;20 </span>
+              </h4>
+            </div>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="15"> &dollar;15 </span>
+              </h4>
+            </div>
+            <button class="btn text-white px-5 py-2">MAIN DISH</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer text-center">
+      <div class="container section-hidden">
+        <h2 class="h1 mb-3">Sunday Offer</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,
+          cupiditate eius. Sed consequuntur neque soluta delectus, quam rerum
+          animi id cupiditate.
+          <span class="d-none d-md-inline"
+            >quo reprehenderit, quibusdam nisi ratione quos minus repellat
+            dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Eligendi, cupiditate eius.</span
+          >
+        </p>
+        <button class="btn text-white px-5 py-2">DISCOVER</button>
+      </div>
+    </section>
+    <section class="chef-menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 py-4">
+            <h2 class="mb-4 h1">Chef Menu</h2>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="18"> &dollar;18 </span>
+              </h4>
+            </div>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="20"> &dollar;20 </span>
+              </h4>
+            </div>
+            <div class="cuisine">
+              <h3 class="h5">Cuisine Name</h3>
+              <p class="mb-0">Lorem ipsum, dolor sit amet.</p>
+              <h4 class="h5 price d-flex align-items-center">
+                <span data-price="15"> &dollar;15 </span>
+              </h4>
+            </div>
+            <button class="btn text-white px-5 py-2">MAIN DISH</button>
+          </div>
+          <div class="col-md-5 p-0 d-flex img-box">
+            <img
+              class="img-fluid blur"
+              src="imgs/chef-menu.jpg"
+              data-src="imgs/chef-menu-full.jpg"
+              alt="soup in bowl"
+              width="1248px"
+              height="832px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="today" class="today pb-5 pb-md-0">
+      <div class="container overflow-hidden">
+        <h2 class="h1 text-center mb-5">Today's Best</h2>
+        <div class="row today-meal align-items-center">
+          <div
+            class="
+              col-lg
+              text-center text-lg-left
+              mb-5 mb-lg-0
+              overflow-hidden
+              bounce bounce-right
+            "
+          >
+            <img
+              src="imgs/today.jpg"
+              data-src="imgs/today-full.jpg"
+              alt="cooked noodles with shrimps"
+              class="img-fluid rounded blur"
+              width="540px"
+              height="360px"
+            />
+          </div>
+          <div class="col-lg meals bounce bounce-left">
+            <h3 class="h4">Cuisine Name</h3>
+            <p>Lorem ipsum dolor sit, amet.</p>
+            <h4 class="h6">
+              PRICE <span>&dollar;29.59</span>
+              <i class="fas fa-star" aria-hidden="true"></i
+              ><i class="fas fa-star" aria-hidden="true"></i
+              ><i class="fas fa-star" aria-hidden="true"></i
+              ><i class="fas fa-star" aria-hidden="true"></i
+              ><i class="fas fa-star" aria-hidden="true"></i>
+            </h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repellendus nihil qui dolorum placeat fugit.
+            </p>
+            <ul class="pl-3">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem, ipsum dolor sit amet consectetur</li>
+              <li>Lorem ipsum dolor sit, amet.</li>
+            </ul>
+            <button class="btn text-white px-5 py-2">BOOK A TABLE</button>
+          </div>
+        </div>
+        <div
+          id="carousel-example"
+          class="carousel slide d-none d-md-block"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner row w-100 mx-auto">
+            <div class="carousel-item col-4 active">
+              <img
+                src="imgs/slide-1.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="round white bowl with ramen and egg"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="carousel-item col-4">
+              <img
+                src="imgs/slide-2.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="vegetable and meat on bowl"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="carousel-item col-4">
+              <img
+                src="imgs/slide-3.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="bread with sunny side-up egg"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="carousel-item col-4">
+              <img
+                src="imgs/slide-4.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="burger with lettuce and tomato"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="carousel-item col-4">
+              <img
+                src="imgs/slide-5.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="punch of vegetables"
+                width="400px"
+                height="400px"
+              />
+            </div>
+            <div class="carousel-item col-4">
+              <img
+                src="imgs/slide-6.jpg"
+                class="img-fluid mx-auto d-block"
+                alt="green salad on a black bowl"
+                width="400px"
+                height="400px"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-target="#carousel-example"
+            data-slide="prev"
+          >
+            <i
+              class="fas fa-chevron-left fa-2x carousel"
+              aria-hidden="true"
+            ></i>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-target="#carousel-example"
+            data-slide="next"
+          >
+            <i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="container section-hidden">
+        <h2 class="mb-4 h1 text-center">What customers say</h2>
+        <h3 class="h4 text-white mb-5">Once you try it, you can't go back</h3>
+        <div class="row align-items-center">
+          <div
+            class="
+              testimonial
+              mx-4 mx-sm-0
+              col-md-5 col-lg
+              m-lg-2
+              py-3
+              rounded
+              text-white
+            "
+          >
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              eligendi! Rerum repudiandae consectetur, voluptatem modi,
+              obcaecati nihil sint error magnam fuga totam itaque ex
+              reprehenderit.
+            </blockquote>
+            <h4 class="h6">- JOHN DOE</h4>
+            <img
+              class="rounded-circle"
+              src="imgs/testimonial-1.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div
+            class="
+              testimonial
+              mx-4 mx-sm-0
+              col-md-5 col-lg
+              m-lg-2
+              py-3
+              rounded
+              text-white
+            "
+          >
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              eligendi! Rerum repudiandae consectetur, voluptatem modi,
+              obcaecati nihil sint error magnam fuga totam itaque ex
+              reprehenderit.
+            </blockquote>
+            <h4 class="h6">- JOHN DOE</h4>
+            <img
+              class="rounded-circle"
+              src="imgs/testimonial-2.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+          </div>
+          <div
+            class="
+              testimonial
+              mx-4 mx-sm-0
+              offest-md-3
+              col-md-6 col-lg
+              m-lg-2
+              py-3
+              rounded
+              text-white
+            "
+          >
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              eligendi! Rerum repudiandae consectetur, voluptatem modi,
+              obcaecati nihil sint error magnam fuga totam itaque ex
+              reprehenderit.
+            </blockquote>
+            <h4 class="h6">- JOHN DOE</h4>
+            <img
+              class="rounded-circle"
+              src="imgs/testimonial-3.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reservation" class="reservations font-weight-bold text-white">
+      <div class="container">
+        <h2 class="text-center text-white mb-5">RESERVATIONS</h2>
+        <form class="row">
+          <div class="col-md-6 form-group">
+            <label for="name">Full Name</label>
+            <input
+              class="form-control py-4"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="So Ma :)"
+              required
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="email">Email Address</label>
+            <input
+              class="form-control py-4"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="me@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="table">How many people?</label>
+            <select class="form-control" name="table" id="table">
+              <option disabled selected value>Please choose one option</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6 mt-4">
+            <button class="btn btn-block text-white mt-1 py-3 font-weight-bold">
+              Reserve Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="py-4 text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md text-center text-md-left">
+            &copy; <span>2021</span> Abdulrhman Kotb | Made With
+            <i class="fas fa-heart heart" aria-hidden="true" title="love"></i>
+            <span class="sr-only">love</span>
+          </div>
+          <div class="col-md text-center text-md-right social">
+            <a href="github.com/abdo-kotb" aria-label="github"
+              ><i
+                class="ml-3 github fab fa-github-square"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href="#" aria-label="facebook"
+              ><i
+                class="ml-3 fab facebook fa-facebook-square"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href="#" aria-label="twitter"
+              ><i
+                class="ml-3 fab twitter fa-twitter-square"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a href="#" aria-label="linkedin"
+              ><i class="ml-3 fab linkedin fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

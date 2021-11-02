@@ -1,0 +1,301 @@
+/* QUERIES */
+/* 1344px */
+
+@media (max-width: 87em) {
+  .header::before {
+    top: -50%;
+  }
+
+  .header::after {
+    bottom: -50%;
+  }
+}
+
+/* 1200px */
+
+@media (max-width: 75em) {
+  .header::before {
+    top: -40%;
+  }
+
+  .header::after {
+    bottom: -40%;
+  }
+}
+
+/* 1072px */
+
+@media (max-width: 67em) {
+  .header::before {
+    top: -30%;
+  }
+
+  .header::after {
+    bottom: -30%;
+  }
+}
+
+/* 992px */
+
+@media (max-width: 62em) {
+  .header::before,
+  .header::after {
+    display: none;
+  }
+
+  .header .nav-item.btn {
+    background-color: var(--color-primary);
+  }
+
+  .section-features h2 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials .row {
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+/* 768px */
+
+@media (max-width: 48em) {
+  .reservations {
+    background: var(--tertiary-color);
+  }
+}
+
+/* 576px */
+
+@media (max-width: 36em) {
+  .offer p {
+    font-size: 1rem;
+  }
+
+  .testimonials {
+    background: var(--color-primary);
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonials h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ANIMATIONS */
+.bounce-none {
+  transform: unset !important;
+}
+
+.bounce-left {
+  transform: translateX(100vw);
+}
+
+.bounce-down {
+  transform: translateY(-100vh);
+}
+
+.bounce-right {
+  transform: translateX(-100vw);
+}
+
+.nav-item.btn i {
+  animation: down 1.5s ease-out infinite;
+}
+
+.pulse {
+  animation: pulse 1s linear 3;
+}
+
+.hero .btn {
+  position: relative;
+}
+
+.hero .btn:hover::before {
+  transform: scaleX(1);
+}
+
+.hero .btn::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: all 0.3s ease-out;
+}
+
+.hero-img {
+  animation: spin 1.5s linear 2;
+}
+
+.wobble-link:hover i {
+  animation: wobble 1s ease-in-out;
+}
+
+@keyframes down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25%,
+  75% {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble {
+  16.65% {
+    transform: translateX(6px);
+  }
+
+  33.3% {
+    transform: translateX(-5px);
+  }
+
+  49.95% {
+    transform: translateX(4px);
+  }
+
+  66.6% {
+    transform: translateX(-2px);
+  }
+
+  83.25% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*
+    CAROUSEL CODE
+    code by Iatek LLC 2018 - CC 2.0 License
+    code customized by Azmind.com
+*/
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* my carousel code */
+.today .carousel-inner {
+  padding: 8rem;
+}
+
+.today .carousel-control-next,
+.carousel-control-prev {
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+  border: none;
+  background-color: unset;
+  color: var(--tertiary-color);
+}
